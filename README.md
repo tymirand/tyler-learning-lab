@@ -1,3 +1,0 @@
-# Social Justice Website
-
-Something
