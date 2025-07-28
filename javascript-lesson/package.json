@@ -1,0 +1,12 @@
+{
+  "name": "javascript-lesson",
+  "version": "1.0.0",
+  "description": "JS with shopping cart examples",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+} 
