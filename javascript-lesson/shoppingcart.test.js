@@ -25,7 +25,7 @@ test("Calculates correct total for simple shopping cart", () => {
 test("correctly identifies if items are in stock", () => {
   const testItems = {
     orange: [3, 15], // orange has 15 in stock
-    grape: [5, 0], // (out of stock)
+    grape: [5, 0], // grape has 0 (out of stock)
   };
 
   expect(isItemInStock("orange", testItems)).toBe(true); // Should be in stock
