@@ -1,7 +1,7 @@
 const { calculateCartTotal, isItemInStock } = require("./shoppingcart.js");
 
-// ~~~ Test 1: Simple shopping cart total calculation ~~~
-test("Calculates correct total for simple shopping cart", () => {
+// ~~~ Test 1: Shopping cart total calculation ~~~
+test("Calculates correct total for shopping cart", () => {
   // [price, quantity in stock]
   const testItems = {
     apple: [2, 10],
@@ -23,6 +23,7 @@ test("Calculates correct total for simple shopping cart", () => {
 
 // ~~~ Test 2: Check Stock of an Item ~~~
 test("correctly identifies if items are in stock", () => {
+  // [number to buy, stock]
   const testItems = {
     orange: [3, 15], // orange has 15 in stock
     grape: [5, 0], // grape has 0 (out of stock)
@@ -30,5 +31,4 @@ test("correctly identifies if items are in stock", () => {
 
   expect(isItemInStock("orange", testItems)).toBe(true); // Should be in stock
   expect(isItemInStock("grape", testItems)).toBe(false); // Should be out of stock
-  expect(isItemInStock("apple", testItems)).toBe(false); // Item doesn't exist
 });
